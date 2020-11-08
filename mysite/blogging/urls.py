@@ -1,4 +1,5 @@
 from django.urls import path
+from blogging.views import stub_view
 from blogging.views import list_view
 
 urlpatterns = [
