@@ -9,6 +9,20 @@
 <div class="post-body">
   {{ object.text }}
 </div>
+<br>
+</div>
+
+<h3>Let us know how you feel: (Take a poll)</h3>
+<br>
+<ul class="polls">
+  {% for poll in object.polls.all %}
+        <li><a href="{% url 'poll_detail' poll.pk %}">{{ poll }}</a></li>
+     {% endfor %}
+</ul>
+<br>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<br>
+<h5>Blog Tags:</h5>
 <ul class="categories">
   {% for category in object.categories.all %}
     <li>{{ category }}</li>

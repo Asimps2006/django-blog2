@@ -10,4 +10,17 @@
         </h2>
     </div>
 {% endfor %}
+<h1>Question Polls:</h1>
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Question Polls are available.</p>
+{% endif %}
 {% endblock %}
+
+
+

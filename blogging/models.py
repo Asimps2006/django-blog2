@@ -2,6 +2,7 @@ from django.db import models
 
 from django.db import models  # <-- This is already in the file
 from django.contrib.auth.models import User
+from polling.models import Poll, Question
 
 class Post(models.Model):
     title = models.CharField(max_length=128)
