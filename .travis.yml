@@ -1,0 +1,57 @@
+language: python
+python:
+  - "3.8.1"
+install:
+  - pip install -r requirements.txt
+  - python manage.py migrate
+script:
+  - python manage.py test
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+.travis.yml [unix] (15:59 31/12/1969)                                                             0,0-1 All
+".travis.yml" [New File]
+
