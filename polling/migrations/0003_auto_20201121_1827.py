@@ -6,18 +6,20 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('blogging', '0003_auto_20201108_1444'),
-        ('polling', '0002_choice_question'),
+        ("blogging", "0003_auto_20201108_1444"),
+        ("polling", "0002_choice_question"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='poll',
-            options={'verbose_name_plural': 'polls'},
+            name="poll",
+            options={"verbose_name_plural": "polls"},
         ),
         migrations.AddField(
-            model_name='poll',
-            name='posts',
-            field=models.ManyToManyField(blank=True, related_name='polls', to='blogging.Post'),
+            model_name="poll",
+            name="posts",
+            field=models.ManyToManyField(
+                blank=True, related_name="polls", to="blogging.Post"
+            ),
         ),
     ]
